@@ -166,8 +166,8 @@ extension UIImageView {
 
 
 public class ImageViewObject: NSObject {
-    var dataSource: ImageDataSource?
-    var initialIndex: Int = 0
-    var sourceView: UIImageView!
-    var fromVC : UIViewController!
+   public var dataSource: ImageDataSource?
+   public var initialIndex: Int = 0
+   public var sourceView: UIImageView!
+   public var fromVC : UIViewController!
 }
