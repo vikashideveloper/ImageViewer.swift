@@ -149,8 +149,8 @@ extension UIImageView {
         presentFromVC?.present(imageCarousel, animated: true)
     }
     
-    @objc
-    func showImageViewer(data: ImageViewObject) {
+  @objc
+  public func showImageViewer(data: ImageViewObject) {
         let imageCarousel = ImageCarouselViewController.init(
             sourceView: data.sourceView,
             imageDataSource: data.dataSource,
@@ -165,7 +165,7 @@ extension UIImageView {
 
 
 
-class ImageViewObject: NSObject {
+public class ImageViewObject: NSObject {
     var dataSource: ImageDataSource?
     var initialIndex: Int = 0
     var sourceView: UIImageView!
